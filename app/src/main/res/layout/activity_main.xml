@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    tools:context="com.codinginflow.internalstorageexample.MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="281dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@android:dimen/notification_large_icon_height"
+        android:layout_marginTop="@android:dimen/notification_large_icon_height"
+        android:layout_marginEnd="@android:dimen/notification_large_icon_height"
+        android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:onClick="save"
+        android:text="Save Note"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_save"
+        android:layout_alignStart="@+id/button_save"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="15dp"
+        android:onClick="load"
+        android:text="Load Note"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="32dp"
+        android:text="Single Note"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</RelativeLayout>
